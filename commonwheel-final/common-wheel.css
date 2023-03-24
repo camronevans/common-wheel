@@ -1,0 +1,270 @@
+body {
+    animation: fadeInAnimation ease 2.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .header {
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+    right: 35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+    z-index: 2;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-family: Rubik, Helvetica;
+    font-size: 18px;
+  }
+
+  .header-background {
+    height: 50px;
+    display: flex;
+    position: fixed;
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    background-color: white;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-family: Rubik, Helvetica;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+
+  img:hover {
+    cursor: url(content/graphic-elements/wheel-cursor-green.png), auto;
+  }
+
+  .navigation {
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    flex-shrink: 0;
+    top: 55px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: solid;
+    border-bottom-color: lightgray;
+    border-width: 1px;
+
+    font-family: Rubik, Helvetica;
+    font-size: 15px;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: #498369;
+    transition: 0.2s;
+  }
+
+  .home {
+    flex: 50%;
+    display: flex;
+    padding-top: 100px;
+    gap: 10px;
+  }
+
+  .history {
+    flex: 50%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .projects {
+    flex: 50%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .shops {
+    flex: 50%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .contact {
+    flex: 50%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .column {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  .column:hover .overlay {
+    opacity: 1;
+  }
+
+  p {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-weight: 300;
+  }
+
+  .title {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #acc1e5;
+    transition: 0.2s;
+  }
+
+  .title:hover {
+    color: #498369;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: 950px;
+    padding: 10px;
+    padding-top: 140px;
+    justify-items: left;
+  }
+
+  .container-last {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: auto;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 100px;
+    justify-items: left;
+  }
+
+  .blue {
+    color: #acc1e5;
+  }
+
+  .blue-hover {
+    color: #acc1e5;
+    transition: 0.2s;
+  }
+
+  .blue-hover:hover {
+    color: #498369;
+    transition: 0.2s;
+  }
+
+  .green {
+    color: #498369;
+    transition: 0.2s;
+  }
+
+  .green-normal {
+    color: #498369;
+    transition: 0.2s;
+  }
+
+  .green:hover {
+    color: #acc1e5;
+    transition: 0.2s;
+  }
+
+  .container-2 {
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 5px;
+  }
+  
+  .column-2 {
+    position: relative;
+    width: 32.7%;
+  }
+
+  .column-2:hover .overlay {
+    opacity: 1;
+  }
+
+  .footer {
+    min-height: 100px;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    margin-top: auto;
+
+    font-family: Rubik, Helvetica;
+    font-weight: 300;
+    font-size: 13px;
+    color: rgb(113, 113, 113);
+    line-height: 18px;
+    transition: 0.2s;
+  }
+
+  .position-left:hover {
+    color: #498369;
+    transition: 0.2s;
+  }
+
+  .position-right:hover {
+    color: #498369;
+    transition: 0.2s;
+  }
